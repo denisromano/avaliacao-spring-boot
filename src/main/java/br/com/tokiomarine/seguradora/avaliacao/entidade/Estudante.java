@@ -16,6 +16,9 @@ public class Estudante {
     @NotNull(message = "Email é obrigatório")
     private String email;
     private String telefone;
+    @NotNull(message = "Matricula é obrigatório")
+    private String matricula;
+    private String curso;
 
     public Long getId() {
         return id;
@@ -47,5 +50,21 @@ public class Estudante {
 
     public void setTelefone(String telefone) {
         this.telefone = telefone;
+    }
+
+    public String getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
+    public String getCurso() {
+        return curso;
+    }
+
+    public void setCurso(String curso) {
+        this.curso = curso;
     }
 }

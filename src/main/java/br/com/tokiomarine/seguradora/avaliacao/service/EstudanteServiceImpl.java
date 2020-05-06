@@ -20,12 +20,16 @@ public class EstudanteServiceImpl implements EstudandeService {
 	@Override
 	public void cadastrarEstudante(@Valid Estudante estudante) {
 		repository.save(estudante);
-		System.out.println("Salvou");
 	}
 
 	@Override
 	public void atualizarEstudante(@Valid Estudante estudante) {
 		repository.save(estudante);
+	}
+
+	@Override
+	public void deletarEstudante(long id) {
+		repository.deleteById(id);
 	}
 
 	@Override
